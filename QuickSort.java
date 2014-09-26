@@ -1,5 +1,5 @@
 /**
- * ¿ìËÙÅÅĞò
+ * å¿«é€Ÿæ’åº
  */
 package bupt.ccb.sort;
 
@@ -27,13 +27,13 @@ public class QuickSort {
 	private static int partition(int[] list, int begin, int end) {
 		// TODO Auto-generated method stub
 		int index;
-		int povit = list[end];//Ñ¡È¡×îºóÒ»¸öÔªËØµ±×öÖ÷Ôª
+		int povit = list[end];//é€‰å–æœ€åä¸€ä¸ªå…ƒç´ å½“åšä¸»å…ƒ
 		for (int i = index = begin; i < end; i++) {
-			if (list[i] <= povit) {//½«Ğ¡µÈÓÚÖ÷ÔªµÄÔªËØÒÆµ½Ç°Ãæ
+			if (list[i] <= povit) {//å°†å°ç­‰äºä¸»å…ƒçš„å…ƒç´ ç§»åˆ°å‰é¢
 				swap(list, index++, i);
 			}
 		}
-		swap(list, index, end);//½«Ö÷Ôª²åÈëÖĞ¼ä£¬Ê¹µÃÖ÷Ôª×ó±ßĞ¡ÓëÖ÷Ôª£¬ÓÒ±ß´óÓëÖ÷Ôª
+		swap(list, index, end);//å°†ä¸»å…ƒæ’å…¥ä¸­é—´ï¼Œä½¿å¾—ä¸»å…ƒå·¦è¾¹å°äºä¸»å…ƒï¼Œå³è¾¹å¤§äºä¸»å…ƒ
 		return index;
 	}
 
